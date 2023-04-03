@@ -1,203 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Patternfly elements Project</title>
-    <script type="module" src="https://jspm.dev/@patternfly/elements"></script>
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/@patternfly/patternfly/patternfly.css"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body>
-    <div class="pf-c-page" id="dashboard-demo">
-      <header class="pf-c-masthead" id="dashboard-demo-masthead">
-        <span class="pf-c-masthead__toggle">
-          <pf-button id="expandCollapseButton" plain
-            ><i class="fas fa-bars" aria-hidden="true"></i
-          ></pf-button>
-        </span>
-        <div class="pf-c-masthead__main">
-          <a class="pf-c-masthead__brand" href="#">
-            <picture
-              class="pf-c-brand pf-m-picture"
-              style="
-                --pf-c-brand--Width: 180px;
-                --pf-c-brand--Width-on-md: 180px;
-                --pf-c-brand--Width-on-2xl: 220px;
-              "
-            >
-              <source
-                media="(min-width: 768px)"
-                srcset="
-                  https://www.patternfly.org/v4/assets/images/logo__pf--reverse-on-md.svg
-                "
-              />
-              <source
-                srcset="
-                  https://www.patternfly.org/v4/assets/images/logo__pf--reverse--base.svg
-                "
-              />
-              <img
-                src="https://www.patternfly.org/v4/assets/images/logo__pf--reverse--base.png"
-                alt="Fallback patternFly default logo"
-              />
-            </picture>
-          </a>
-        </div>
-      </header>
-      <div id="sidebarList" class="pf-c-page__sidebar pf-m-expanded">
-        <div class="pf-c-page__sidebar-body">
-          <nav
-            class="pf-c-nav"
-            id="dashboard-demo-primary-nav"
-            aria-label="Global"
-          >
-            <ul class="pf-c-nav__list">
-              <li class="pf-c-nav__item">
-                <a href="#" class="pf-c-nav__link">System panel</a>
-              </li>
-              <li class="pf-c-nav__item">
-                <a
-                  href="#"
-                  class="pf-c-nav__link pf-m-current"
-                  aria-current="page"
-                  >Policy</a
-                >
-              </li>
-              <li class="pf-c-nav__item">
-                <a href="#" class="pf-c-nav__link">Authentication</a>
-              </li>
-              <li class="pf-c-nav__item">
-                <a href="#" class="pf-c-nav__link">Network services</a>
-              </li>
-              <li class="pf-c-nav__item">
-                <a href="#" class="pf-c-nav__link">Server</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-      <main
-        class="pf-c-page__main"
-        tabindex="-1"
-        id="main-content-dashboard-demo"
-      >
-        <section class="pf-c-page__main-section pf-m-limit-width pf-m-light">
-          <div class="pf-c-page__main-body">
-            <div class="pf-c-content">
-              <h1>Main title</h1>
-              <p>This is a full page demo.</p>
-              <pf-label color="blue">Blue</pf-label>
-              <pf-label color="green">Green</pf-label>
-            </div>
-          </div>
-        </section>
-        <section class="pf-c-page__main-section pf-m-limit-width">
-          <div class="pf-c-page__main-body">
-            <div class="pf-l-grid pf-m-gutter">
-              <pf-card size="compact">
-                <h3 slot="header">
-                  <div class="pf-c-card__header">
-                    <div class="pf-c-card__header-toggle">
-                      <pf-button id="cardExpandButton" plain
-                        ><span class="pf-c-card__header-toggle-icon">
-                          <i
-                            class="fas fa-angle-down"
-                            id="cardExpandButtonIcon"
-                            aria-hidden="true"
-                          ></i> </span
-                      ></pf-button>
-                    </div>
-                    <div
-                      class="pf-c-card__title"
-                      id="dashboard-demo-expandable-status-card-1-title"
-                    >
-                      <h2 class="pf-c-title pf-m-xl">
-                        Improve recommended pathways
-                      </h2>
-                    </div>
-                  </div>
-                </h3>
-                <div id="expandCollapseCardBody" class="pf-c-card__body">
-                  <div
-                    class="pf-l-flex pf-m-column pf-u-h-100 pf-m-space-items-sm"
-                  >
-                    <div class="pf-l-flex__item pf-m-spacer-md">
-                      <p>
-                        Upgrade your kernel version to remediate ntpd time sync
-                        issues, kernel panics, network instabilities and issues
-                        with system performance
-                      </p>
-                    </div>
-                  </div>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Patternfly elements Project</title>
+        <script type="module" src="https://jspm.dev/@patternfly/elements"></script>
+        <link rel="stylesheet" href="https://unpkg.com/@patternfly/patternfly/patternfly.css" crossorigin="anonymous" />
+    </head>
+    <body>
+        <div class="pf-c-page" id="dashboard-demo">
+            <header class="pf-c-masthead" id="dashboard-demo-masthead">
+                <span class="pf-c-masthead__toggle">
+                    <pf-button id="expandCollapseButton" plain
+                        ><i class="fas fa-bars" aria-hidden="true"></i
+                    ></pf-button>
+                </span>
+                <div class="pf-c-masthead__main">
+                    <a class="pf-c-masthead__brand" href="#">
+                        <picture
+                            class="pf-c-brand pf-m-picture"
+                            style="
+                                --pf-c-brand--Width: 180px;
+                                --pf-c-brand--Width-on-md: 180px;
+                                --pf-c-brand--Width-on-2xl: 220px;
+                            "
+                        >
+                            <source
+                                media="(min-width: 768px)"
+                                srcset="https://www.patternfly.org/v4/assets/images/logo__pf--reverse-on-md.svg"
+                            />
+                            <source srcset="https://www.patternfly.org/v4/assets/images/logo__pf--reverse--base.svg" />
+                            <img
+                                src="https://www.patternfly.org/v4/assets/images/logo__pf--reverse--base.png"
+                                alt="Fallback patternFly default logo"
+                            />
+                        </picture>
+                    </a>
                 </div>
-                <pf-modal
-                  id="confirmationModal"
-                  variant="small"
-                  slot="footer"
-                  trigger="usage-trigger"
-                >
-                  <p>Are you sure to confirm this information</p>
-                  <pf-button slot="footer" data-action="confirm">Yes</pf-button>
-                  <pf-button
-                    variant="secondary"
-                    slot="footer"
-                    data-action="cancel"
-                    data-action1="anuj"
-                    >No</pf-button
-                  >
-                </pf-modal>
-                <pf-button id="usage-trigger">Open modal</pf-button>
-              </pf-card>
-            </div>
-          </div>
-        </section>
-
-        <section class="pf-c-page__main-section pf-m-limit-width">
-          <div class="pf-c-page__main-body">
-            <div class="pf-l-grid pf-m-gutter">
-              <pf-card size="compact">
-                <h3 slot="header">Header</h3>
-                <div class="pf-c-card__body">
-                  <pf-accordion>
-                    <pf-accordion-header>
-                      <h3>
-                        Laboris sunt qui dolor consectetur excepteur in aliqua
-                        ipsum?
-                      </h3>
-                    </pf-accordion-header>
-                    <pf-accordion-panel>
-                      <p>
-                        Culpa adipisicing sunt dolor ullamco dolor duis in ad
-                        commodo.
-                      </p>
-                      <a href="#">Call to action</a>
-                    </pf-accordion-panel>
-                    <pf-accordion-header>
-                      <h3>
-                        Anim est tempor fugiat pariatur laborum deserunt ex
-                        mollit aliquip?
-                      </h3>
-                    </pf-accordion-header>
-                    <pf-accordion-panel>
-                      <p>
-                        <a href="#">Ullamco ullamco sint</a> ex id magna elit
-                        deserunt dolore nostrud eu et dolore est Lorem. Esse
-                        laborum do ut consectetur occaecat proident et nostrud
-                        ut nostrud veniam officia Lorem.
-                      </p>
-                    </pf-accordion-panel>
-                  </pf-accordion>
+            </header>
+            <div id="sidebarList" class="pf-c-page__sidebar pf-m-expanded">
+                <div class="pf-c-page__sidebar-body">
+                    <nav class="pf-c-nav" id="dashboard-demo-primary-nav" aria-label="Global">
+                        <ul class="pf-c-nav__list">
+                            <li class="pf-c-nav__item">
+                                <a href="#" class="pf-c-nav__link">System panel1</a>
+                            </li>
+                            <li class="pf-c-nav__item">
+                                <a href="#" class="pf-c-nav__link pf-m-current" aria-current="page">Policy</a>
+                            </li>
+                            <li class="pf-c-nav__item">
+                                <a href="#" class="pf-c-nav__link">Authentication</a>
+                            </li>
+                            <li class="pf-c-nav__item">
+                                <a href="#" class="pf-c-nav__link">Network services</a>
+                            </li>
+                            <li class="pf-c-nav__item">
+                                <a href="#" class="pf-c-nav__link">Server</a>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
-
-                <p slot="footer">footer</p>
-              </pf-card>
             </div>
-          </div>
-        </section>
-      </main>
-    </div>
-  </body>
+            <main class="pf-c-page__main" tabindex="-1" id="main-content-dashboard-demo">
+                <section class="pf-c-page__main-section pf-m-limit-width pf-m-light">
+                    <div class="pf-c-page__main-body">
+                        <div class="pf-c-content">
+                            <h1>Main title</h1>
+                            <p>This is a full page demo.</p>
+                            <pf-label color="blue">Blue</pf-label>
+                            <pf-label color="green">Green</pf-label>
+                        </div>
+                    </div>
+                </section>
+                <section class="pf-c-page__main-section pf-m-limit-width">
+                    <div class="pf-c-page__main-body">
+                        <div class="pf-l-grid pf-m-gutter">
+                            <pf-card size="compact">
+                                <h3 slot="header">
+                                    <div class="pf-c-card__header">
+                                        <div class="pf-c-card__header-toggle">
+                                            <pf-button id="cardExpandButton" plain
+                                                ><span class="pf-c-card__header-toggle-icon">
+                                                    <i
+                                                        class="fas fa-angle-down"
+                                                        id="cardExpandButtonIcon"
+                                                        aria-hidden="true"
+                                                    ></i> </span
+                                            ></pf-button>
+                                        </div>
+                                        <div
+                                            class="pf-c-card__title"
+                                            id="dashboard-demo-expandable-status-card-1-title"
+                                        >
+                                            <h2 class="pf-c-title pf-m-xl">Improve recommended pathways</h2>
+                                        </div>
+                                    </div>
+                                </h3>
+                                <div id="expandCollapseCardBody" class="pf-c-card__body">
+                                    <div class="pf-l-flex pf-m-column pf-u-h-100 pf-m-space-items-sm">
+                                        <div class="pf-l-flex__item pf-m-spacer-md">
+                                            <p>
+                                                Upgrade your kernel version to remediate ntpd time sync issues, kernel
+                                                panics, network instabilities and issues with system performance
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <pf-modal id="confirmationModal" variant="small" slot="footer" trigger="usage-trigger">
+                                    <p>Are you sure to confirm this information</p>
+                                    <pf-button slot="footer" data-action="confirm">Yes</pf-button>
+                                    <pf-button
+                                        variant="secondary"
+                                        slot="footer"
+                                        data-action="cancel"
+                                        data-action1="anuj"
+                                        >No</pf-button
+                                    >
+                                </pf-modal>
+                                <pf-button id="usage-trigger">Open modal</pf-button>
+                            </pf-card>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="pf-c-page__main-section pf-m-limit-width">
+                    <div class="pf-c-page__main-body">
+                        <div class="pf-l-grid pf-m-gutter">
+                            <pf-card size="compact">
+                                <h3 slot="header">Header</h3>
+                                <div class="pf-c-card__body">
+                                    <pf-accordion>
+                                        <pf-accordion-header>
+                                            <h3>Laboris sunt qui dolor consectetur excepteur in aliqua ipsum?</h3>
+                                        </pf-accordion-header>
+                                        <pf-accordion-panel>
+                                            <p>Culpa adipisicing sunt dolor ullamco dolor duis in ad commodo.</p>
+                                            <a href="#">Call to action</a>
+                                        </pf-accordion-panel>
+                                        <pf-accordion-header>
+                                            <h3>Anim est tempor fugiat pariatur laborum deserunt ex mollit aliquip?</h3>
+                                        </pf-accordion-header>
+                                        <pf-accordion-panel>
+                                            <p>
+                                                <a href="#">Ullamco ullamco sint</a> ex id magna elit deserunt dolore
+                                                nostrud eu et dolore est Lorem. Esse laborum do ut consectetur occaecat
+                                                proident et nostrud ut nostrud veniam officia Lorem.
+                                            </p>
+                                        </pf-accordion-panel>
+                                    </pf-accordion>
+                                </div>
+
+                                <p slot="footer">footer</p>
+                            </pf-card>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+    </body>
 </html>
